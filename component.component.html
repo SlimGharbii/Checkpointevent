@@ -1,0 +1,15 @@
+<div
+  [style.color]="color">
+    {{Morningfellas}}
+  <br>
+  Bonjourrrr
+</div>
+<input #moncouleur type="text">
+<button
+  (click)="setdefaultcolor()"
+  [disabled]="moncouleur.value.length == 0"
+  class="btn btn-primary">
+  Set to default color
+</button>
+<button
+  (click)="changecolor(moncouleur.value)">change color</button>
